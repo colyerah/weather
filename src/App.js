@@ -78,8 +78,8 @@ function App() {
        //display default window
        if (temp > 55 && temp < 75) {
          setWindow(Default);
-       setWmessage("");
-       }  
+       }
+       setWmessage("");  
      }
 
       })
