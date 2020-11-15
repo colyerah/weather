@@ -7,6 +7,8 @@ import UV from "./images/UV SB.png";
 import Snow from "./images/Snow SB.png";
 import Wind from "./images/Wind SB.png";
 import Frame from "./images/frame.png";
+import Hot from "./images/Hot SB.png";
+import Cold from "./images/Cold SB.png";
 
 function App() {
   const [temp, setTemp] = useState(0);
@@ -37,13 +39,15 @@ function App() {
         setText(yeet.current.condition.text);
 
      if (temp > 70) {
-      setTmessage("It's hot out today.")
+      setTmessage("It's hot out today.");
+      setWindow(Hot);
       }
      if (temp < 70 && temp > 60) {
-      setTmessage("It's perfectly mild out today.")
+      setTmessage("It's perfectly mild out today.");
       }
      if (temp < 60) {
-      setTmessage("It's cold out today.")
+      setTmessage("It's cold out today.");
+      setWindow(Cold);
      }
      
      if (text.includes("snow")) {
@@ -72,8 +76,10 @@ function App() {
 
      if (uv < 6 && rain < 0.10 && wind < 25) {
        //display default window
-       setWindow(Default);
+       if (temp > 55 && temp < 75) {
+         setWindow(Default);
        setWmessage("");
+       }  
      }
 
       })
@@ -101,12 +107,16 @@ function App() {
     padding: '150px',
     fontSize: '80%',
     width: '80%'}}>
-        <h1>Where are you?</h1>
-        <input type="text" onChange={(e) => setInput(e.target.value)} />
-        <button style={{backgroundColor: '#E0C885', color: 'black', fontFamily: 'Arial Black', borderRadius: '7px'}} onClick={locationSet}>What's it like outside?</button>
+        <h1 style={{lineHeight: '70%'}} >Where are you?</h1>
+        <input style={{width: '15%'}} type="text" onChange={(e) => setInput(e.target.value)} />
+        <button style={{backgroundColor: '#E0C885', 
+                        color: 'black', 
+                        fontFamily: 'Arial Black', 
+                        borderRadius: '7px'}} 
+                onClick={locationSet}>What's it like outside?</button>
         <h2>It's {temp}°F in {location}.</h2>
-        <h2>{tmessage}</h2>
-        <h2>{wmessage}</h2>
+        <h2 style={{lineHeight: '75%'}}>{tmessage}</h2>
+        <h2 style={{lineHeight: '75%'}}>{wmessage}</h2>
       </div>
     </div>
   );
