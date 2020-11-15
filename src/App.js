@@ -107,11 +107,12 @@ function App() {
       textAlign: 'center',
       padding: '20vmin',
       paddingTop: '13vh',
+      paddingBottom: '19vmin',
       fontSize: '1.5vmin',
       width: '78vw',
       height: '18vh'}}>
         <h1 style={{lineHeight: '75%'}} >Where are you?</h1>
-        <input style={{width: '10.5vmax', height: '1.7vh'}} type="text" onChange={(e) => setInput(e.target.value)} />
+        <input style={{width: '10.2vmax', height: '1.7vh'}} type="text" onChange={(e) => setInput(e.target.value)} />
         <button style={{backgroundColor: '#E0C885', 
                         color: 'black', 
                         fontFamily: 'Arial Black', 
