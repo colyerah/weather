@@ -108,7 +108,7 @@ function App() {
       padding: '12vmax',
       paddingTop: '6vmax',
       paddingBottom: '10vmax',
-      fontSize: '1.8vmin',
+      fontSize: '.85vmax',
       width: '78vw',
       height: '18vh'}}>
         <h1 style={{lineHeight: '75%'}} >Where are you?</h1>
