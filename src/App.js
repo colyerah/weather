@@ -105,9 +105,9 @@ function App() {
       backgroundSize: 'contain',
       backgroundRepeat: 'no-repeat',
       textAlign: 'center',
-      padding: '16vmin',
-      paddingBottom: '24vmin',
-      fontSize: '.85vmax',
+      padding: '20vmin',
+      paddingTop: '13vh',
+      fontSize: '1.5vmin',
       width: '78vw',
       height: '18vh'}}>
         <h1 style={{lineHeight: '75%'}} >Where are you?</h1>
