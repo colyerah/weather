@@ -105,19 +105,18 @@ function App() {
       backgroundSize: 'contain',
       backgroundRepeat: 'no-repeat',
       textAlign: 'center',
-      padding: '12vmax',
-      paddingTop: '6vmax',
-      paddingBottom: '10vmax',
+      padding: '16vmin',
+      paddingBottom: '24vmin',
       fontSize: '.85vmax',
       width: '78vw',
       height: '18vh'}}>
         <h1 style={{lineHeight: '75%'}} >Where are you?</h1>
-        <input style={{width: '10.5vw', height: '1.7vh'}} type="text" onChange={(e) => setInput(e.target.value)} />
+        <input style={{width: '10.5vmax', height: '1.7vh'}} type="text" onChange={(e) => setInput(e.target.value)} />
         <button style={{backgroundColor: '#E0C885', 
                         color: 'black', 
                         fontFamily: 'Arial Black', 
                         borderRadius: '7px',
-                        fontSize: '115%'}} 
+                        fontSize: '1.6vh'}} 
                 onClick={locationSet}>See Weather</button>
         <h2>It's {temp}°F in {location}.</h2>
         <h2 style={{lineHeight: '85%'}}>{tmessage}</h2>
