@@ -105,9 +105,9 @@ function App() {
       backgroundSize: 'contain',
       backgroundRepeat: 'no-repeat',
       textAlign: 'center',
-      padding: '9.3vmax',
-      paddingTop: '6.5vmax',
-      paddingBottom: '12vmax',
+      padding: '12vmax',
+      paddingTop: '6vmax',
+      paddingBottom: '10vmax',
       fontSize: '1.8vmin',
       width: '78vw',
       height: '18vh'}}>
