@@ -94,12 +94,13 @@ function App() {
     backgroundImage: `url(${Background})`,
     minHeight: '100%',
     minWidth: '100%', 
+    height: '100%',
+    width: '100%',
     backgroundPosition: 'center',
     backgroundSize: 'cover',
     color: 'white',
     fontFamily: 'Arial Black',
-    padding: '10px',
-    position: 'center'}}>
+    padding: '10px'}}>
       <img alt="window" src={window} width="430px" height="350px" paddingBottom='0px'></img>
       <div style={{backgroundImage: `url(${Frame})`, 
       backgroundPosition: 'center',
@@ -110,8 +111,7 @@ function App() {
       fontSize: '80%',
       width: '80%',
       maxWidth: '80%',
-      maxHeight: '80%',
-      position: 'center'}}>
+      maxHeight: '80%'}}>
         <h1 style={{lineHeight: '70%'}} >Where are you?</h1>
         <input style={{width: '15%'}} type="text" onChange={(e) => setInput(e.target.value)} />
         <button style={{backgroundColor: '#E0C885', 
