@@ -105,7 +105,7 @@ function App() {
       backgroundSize: 'contain',
       backgroundRepeat: 'no-repeat',
       textAlign: 'center',
-      padding: '16vh',
+      padding: '8vw',
       fontSize: '1.5vh',
       maxWidth: '80vw',
       maxHeight: '21vh'}}>
