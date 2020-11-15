@@ -92,14 +92,13 @@ function App() {
   return (
     <div style={{textAlign: "center", 
     backgroundImage: `url(${Background})`,
-    minHeight: '100vh', 
+    minHeight: '100%',
+    minWidth: '100%', 
     backgroundPosition: 'center',
     backgroundSize: 'cover',
     color: 'white',
     fontFamily: 'Arial Black',
-    padding: '10px',
-    width: '100%',
-    height: '100%'}}>
+    padding: '10px',}}>
       <img alt="window" src={window} width="430px" height="350px" paddingBottom='0px'></img>
       <div style={{backgroundImage: `url(${Frame})`, 
       backgroundPosition: 'center',
