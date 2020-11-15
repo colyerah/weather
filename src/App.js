@@ -22,7 +22,7 @@ function App() {
   const [window, setWindow] = useState(Default);
 
   useEffect(() => {
-    fetch("http://api.weatherapi.com/v1/current.json?key=812e865705374610804222718202810&q=" + location)
+    fetch("https://api.weatherapi.com/v1/current.json?key=812e865705374610804222718202810&q=" + location)
       .then((res) => res.json())
       .then(yeet => {
         console.log(yeet.current.temp_f);
