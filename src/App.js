@@ -107,7 +107,9 @@ function App() {
     textAlign: 'center',
     padding: '150px',
     fontSize: '80%',
-    width: '80%'}}>
+    width: '80%',
+    maxWidth: '80%',
+    maxHeight: '80%'}}>
         <h1 style={{lineHeight: '70%'}} >Where are you?</h1>
         <input style={{width: '15%'}} type="text" onChange={(e) => setInput(e.target.value)} />
         <button style={{backgroundColor: '#E0C885', 
