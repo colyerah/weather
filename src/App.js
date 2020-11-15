@@ -97,7 +97,9 @@ function App() {
     backgroundSize: 'cover',
     color: 'white',
     fontFamily: 'Arial Black',
-    padding: '10px'}}>
+    padding: '10px',
+    width: '100%',
+    height: '100%'}}>
       <img alt="window" src={window} width="430px" height="350px" paddingBottom='0px'></img>
       <div style={{backgroundImage: `url(${Frame})`, 
       backgroundPosition: 'center',
